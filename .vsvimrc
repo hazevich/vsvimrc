@@ -1,0 +1,41 @@
+set ignorecase
+set clipboard=unnamed
+let mapleader="\<Space>"
+
+
+" Navigating through errors. Example mnemonic - e(rror) n(ext)/p(revious)
+nnoremap <leader>ge :vsc View.NextError <return>
+nnoremap <leader>gE :vsc View.PreviousError <return>
+
+nnoremap <A-j> :vsc Edit.NextMethod <return>
+nnoremap <A-k> :vsc Edit.PreviousMethod <return>
+
+" Code navigation. Example mnemonic - g(oto) t(ype)
+nnoremap <leader>gt :vsc Edit.GoToType <return>
+nnoremap <leader>gm :vsc Edit.GoToMember <return>
+nnoremap <leader>ga :vsc Edit.GoToAll <return>
+nnoremap <leader>gf :vsc Edit.GoToFile <return>
+nnoremap <leader>gd :vsc Edit.GoToDefinition <return>
+nnoremap <leader>gi :vsc Edit.GoToImplementation <return>
+
+" Test explorer commands. Example mnemonic - u(nittest) r(un) c(urrent)/r(repeat)
+nnoremap <leader>urc :vsc TestExplorer.RunAllTestsInContext <return>
+nnoremap <leader>udc :vsc TestExplorer.DebugAllTestsInContext <return>
+nnoremap <leader>urr :vsc TestExplorer.RepeatLastRun <return>
+nnoremap <leader>ura :vsc TestExplorer.RunAllTests <return>
+nnoremap <leader>ust :vsc TestExplorer.ShowTestExplorer <return>
+nnoremap <leader>utl :vsc TestExplorer.OpenTest <return>
+
+" Project commands
+nnoremap <leader>pac :vsc Project.AddClass <return>
+nnoremap <leader>pai :vsc Project.AddInterface <return>
+
+" Refactoring
+nnoremap <leader>rr :vsc Refactor.Rename <return>
+
+nnoremap <leader>qq :vsc View.QuickActions <return>
+
+nnoremap <leader>fu :vsc Edit.FindAllReferences <return>
+
+nnoremap <leader>efs :vsc Edit.FormatSelection <return>
+nnoremap <leader>efd :vsc Edit.FormatDocument <return>
