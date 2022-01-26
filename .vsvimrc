@@ -1,7 +1,9 @@
 set ignorecase
 set clipboard=unnamed
 let mapleader="\<Space>"
-
+set number
+set relativenumber
+set scrolloff=6
 
 " Navigating through errors. Example mnemonic - e(rror) n(ext)/p(revious)
 nnoremap <leader>ge :vsc View.NextError <return>
