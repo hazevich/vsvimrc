@@ -26,7 +26,7 @@ nnoremap <leader>udc :vsc TestExplorer.DebugAllTestsInContext <return>
 nnoremap <leader>urr :vsc TestExplorer.RepeatLastRun <return>
 nnoremap <leader>ura :vsc TestExplorer.RunAllTests <return>
 nnoremap <leader>ust :vsc TestExplorer.ShowTestExplorer <return>
-nnoremap <leader>utl :vsc TestExplorer.OpenTest <return>
+nnoremap <leader>uto :vsc TestExplorer.OpenTest <return>
 
 " Project commands
 nnoremap <leader>pac :vsc Project.AddClass <return>
