@@ -5,7 +5,7 @@ set number
 set relativenumber
 set scrolloff=6
 
-" Navigating through errors. Example mnemonic - e(rror) n(ext)/p(revious)
+" Navigating through errors. Example mnemonic - g(oto) e(rror)
 nnoremap <leader>ge :vsc View.NextError <return>
 nnoremap <leader>gE :vsc View.PreviousError <return>
 
